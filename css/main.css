@@ -49,3 +49,21 @@ body {
 	left: 609px;
 	float: left;
 }
+.slideshow {
+	font-family: 'Gloria Hallelujah', cursive;
+    position: relative;
+    left: 40rem;
+    top: 5rem;
+}
+.slideshow > div {
+	position:absolute;
+}
+#slide1 {
+	z-index: 3;
+}
+#slide2 {
+	z-index: 4;
+}
+#slide3 {
+	z-index: 5;
+}
