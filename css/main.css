@@ -52,18 +52,17 @@ body {
 .slideshow {
 	font-family: 'Gloria Hallelujah', cursive;
     position: relative;
-    left: 40rem;
+    left: 35rem;
     top: 5rem;
 }
 .slideshow > div {
-	position:absolute;
+	position: absolute;
+	background-color: white;
+	width: 100%; 
+	/*width: 600px;*/
+	height: 300px;
+	display: none;
 }
-#slide1 {
-	z-index: 3;
-}
-#slide2 {
-	z-index: 4;
-}
-#slide3 {
-	z-index: 5;
+h1 {
+	font-size: 5rem;
 }

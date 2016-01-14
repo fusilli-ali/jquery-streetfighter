@@ -1,8 +1,17 @@
 $(document).ready(function(){
-    setInterval(function() {
-    $('#slide1').hide();
-    }, 5550);
-});
+    setTimeout(function() {
+    $('#slide1').show().delay(5000).fadeOut();
+    }, 2550);
+    setTimeout(function() {
+    $('#slide2').show().delay(5000).fadeOut();
+    }, 7500);
+    setTimeout(function() {
+    $('#slide3').show().delay(5000).fadeOut();
+    }, 12500);
+    setTimeout(function() {
+    $('#slide4').show().delay(5000).fadeOut();
+    }, 17500);
+    
     var first="still";
     $('.ryu').mouseenter(function(){
         first="ready";
@@ -45,10 +54,9 @@ $(document).ready(function(){
         }
         $('.ryu-cool').hide();  
     });
-
+});
 function playHadouken() {
     $('#hadouken-sound')[0].volume = 0.5;
     $('#hadouken-sound')[0].load();
     $('#hadouken-sound')[0].play();
 }
-
